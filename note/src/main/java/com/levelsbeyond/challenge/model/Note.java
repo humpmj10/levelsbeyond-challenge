@@ -1,9 +1,17 @@
 package com.levelsbeyond.challenge.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * This class acts as the note model.
+ * 
+ * @author michael.humphrey
+ *
+ */
+@Entity
 public class Note {
 
 	@Id
@@ -34,6 +42,5 @@ public class Note {
 	public void setBody(String body) {
 		this.body = body;
 	}
-	
-	
+
 }
